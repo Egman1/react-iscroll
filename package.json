@@ -1,22 +1,13 @@
 {
-  "name": "react-iscroll",
+  "name": "@egman1/react-iscroll",
   "version": "2.0.3",
-  "homepage": "https://github.com/schovi/react-iscroll",
-  "keywords": [
-    "react",
-    "iscroll",
-    "scroll"
-  ],
-  "bugs": {
-    "url": "https://github.com/schovi/react-iscroll/issues"
-  },
   "license": "MIT",
-  "author": {
-    "name": "David Schovanec"
-  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:schovi/react-iscroll.git"
+    "url": "https://github.com/egman1/react-iscroll.git"
+  },
+  "bugs": {
+    "url": "https://github.com/egman1/react-iscroll/issues"
   },
   "main": "dist/react-iscroll.js",
   "jsnext:main": "src/react-iscroll.jsx",
