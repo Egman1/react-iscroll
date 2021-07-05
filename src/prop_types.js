@@ -8,7 +8,7 @@ import {
   instanceOf,
   oneOf,
   oneOfType,
-  arrayOf
+  arrayOf, array
 } from 'prop-types'
 
 const errMsg = function(props, propName, componentName, msgContinuation) {
@@ -139,7 +139,9 @@ const iScrollOptionsPropType = shape({
   resizePolling: number,
 
   // Probe version (onScroll event)
-  probeType: oneOf([1, 2, 3])
+  probeType: oneOf([1, 2, 3]),
+
+  callbacks: array
 })
 
 // Generate propTypes with event function validating

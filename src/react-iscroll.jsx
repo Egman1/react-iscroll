@@ -85,6 +85,7 @@ export default class ReactIScroll extends React.Component {
           }
 
           newIScrollInstance.scrollTo(x, y)
+          this._triggerScrollAfterInitializeEvent(newIScrollInstance);
         })
       })
     }
@@ -224,6 +225,14 @@ export default class ReactIScroll extends React.Component {
 
     if (typeof onInitialize === 'function') {
       onInitialize(iScrollInstance)
+    }
+  }
+
+  _triggerScrollAfterInitializeEvent(iScrollInstance) {
+    const onScrollAfterInitialize = this.props.onScrollAfterInitialize
+
+    if (typeof onScrollAfterInitialize === 'function') {
+      onScrollAfterInitialize(iScrollInstance)
     }
   }
 
